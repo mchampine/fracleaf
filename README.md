@@ -1,6 +1,8 @@
 # fracleaf
 
-A Clojure project to visualize a fractal shape created by iterating an affine transform
+A Clojure project to visualize a fractal shape created by iterating an affine transform.
+
+Uses https://github.com/uncomplicate/neanderthal for the affine transform and https://github.com/techascent/tech.viz for visualization.
 
 ## Usage
 
