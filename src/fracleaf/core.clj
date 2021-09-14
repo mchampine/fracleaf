@@ -60,18 +60,20 @@
         atxfn (nth ifs-affines r)] ;; choose one randomly
     (atxfn coord)))
 
-;;; NOW VISUALIZE IT
+;;; Visualization
 
+;; generate points
 (defn aftx->data
   "Iterate affine transform aftx n times from [0 0]
-  and return a map of :x :y values"
+  and return a map of :x :y coordinates"
   [aftx n]
   (->> (iterate aftx [0 0])
        (take n)
        (mapv (fn [v] (let [[vl vr] (into [] v)] {:x vl :y vr})))))
 
+;; plot them
 (defn myscat
-  "Simple wrapper to make a scatterplot form x,y points"
+  "Make a scatterplot from x,y coordinate data"
   [data title filenam]
   (-> (vega/scatterplot data :x :y
                       {:title title :height 800 :width 500})
