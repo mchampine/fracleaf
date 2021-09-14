@@ -1,14 +1,14 @@
 # fracleaf
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure project to visualize a fractal shape created by iterating an affine transform
 
 ## Usage
 
-FIXME
+Clone the repo, generate svgs, view them however you like (e.g. in a browser)
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 Mark Champine
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
