@@ -43,7 +43,7 @@
   [fm]
   (mapcat (fn [[k v]] (repeat v k)) fm))
 
-(frequencies-inv {0 2, 1 1, 2 1, 3 3, 4 1, 5 1, 6 3})
+(frequencies-inv {0 2, 1 1, 2 1, 3 3, 4 1, 5 1, 6 3}) ;; example usage
 ;; => (0 0 1 2 3 3 3 4 5 6 6 6)
 
 ;; ifs-affines is the IFS expressed as 100 affine 
@@ -80,7 +80,7 @@
     (vega/vega->svg-file filenam)))
 
 ;; 1,000 points
-(myscat (aftx->data rnd-aftx 1000) "Fractal Leaf - 1,00 points" "svgplots/leaf1000.svg")
+(myscat (aftx->data rnd-aftx 1000) "Fractal Leaf - 1,000 points" "svgplots/leaf1000.svg")
 
 ;; 5,000 points
 (myscat (aftx->data rnd-aftx 5000) "Fractal Leaf - 5,000 points" "svgplots/leaf5000.svg")
