@@ -18,11 +18,11 @@
 
 ;; p. 124: Affine Transformation T(u) = A(u) + v
 (defn affinexform
-  "Perform an affine transform of the vector av by matrix am and scalar value sv"
-  [am av sv]
+  "2D Affine transform on point p by matrix m and translation t"
+  [m t p]
   (xpy
-   (mv (dge 2 2 am) (dv sv))
-   (dv av)))
+   (mv (dge 2 2 m) (dv p))
+   (dv t)))
 
 ;; p. 135:
 ;; "The affine transformations and corresponding probabilities that
