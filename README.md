@@ -2,11 +2,12 @@
 
 A Clojure project to visualize a fractal shape created by iterating an affine transform.
 
-Uses [Neaderthal](https://neanderthal.uncomplicate.org/) for the affine transform and [tech.viz](https://github.com/techascent/tech.viz) for visualization.
+Uses [Neaderthal](https://neanderthal.uncomplicate.org/) for the affine transform, nextjournal/clerk for notebook functionality, and [tech.viz](https://github.com/techascent/tech.viz) for visualization.
 
 ## Usage
 
-Clone the repo, generate svgs, view them however you like (e.g. in a browser)
+Clone the repo and jack-in.
+Go to src/fracleaf/core.clj and evaluate (clerk/show! "src/fracleaf/core.clj") to display a notebook page showing the code and output of the leaf visualization. Evaluate (clerk/show! "notebooks/fractalleaf.clj") for a notebook of just the visualization. See src/fracleaf/gensvg.clj to generate svgs.
 
 ## License
 
