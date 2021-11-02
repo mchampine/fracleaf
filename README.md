@@ -7,7 +7,15 @@ Uses [Neaderthal](https://neanderthal.uncomplicate.org/) for the affine transfor
 ## Usage
 
 Clone the repo and jack-in.
-Go to src/fracleaf/core.clj and evaluate (clerk/show! "src/fracleaf/core.clj") to display a notebook page showing the code and output of the leaf visualization. Evaluate (clerk/show! "notebooks/fractalleaf.clj") for a notebook of just the visualization. See src/fracleaf/gensvg.clj to generate svgs.
+
+Go to [src/fracleaf/core.clj](src/fracleaf/core.clj) and evaluate (clerk/show! "src/fracleaf/core.clj") to display a notebook page showing the code and output of the leaf visualization. 
+
+Evaluate (clerk/show! "notebooks/fractalleaf.clj") for a notebook of just the visualization. 
+
+See [src/fracleaf/gensvg.clj](src/fracleaf/gensvg.clj) to generate svgs.
+
+
+![Fractal Leaf Visualization](fracleaf.png)
 
 ## License
 
