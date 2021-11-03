@@ -2,7 +2,7 @@
 
 A Clojure project to visualize a fractal shape created by iterating an affine transform.
 
-Uses [Neaderthal](https://neanderthal.uncomplicate.org/) for the affine transform, nextjournal/clerk for notebook functionality, and [tech.viz](https://github.com/techascent/tech.viz) for visualization.
+Uses [Neaderthal](https://neanderthal.uncomplicate.org/) for the affine transform, [Clerk](https://github.com/nextjournal/clerk) for notebook functionality, and [tech.viz](https://github.com/techascent/tech.viz) for visualization.
 
 ## Usage
 
