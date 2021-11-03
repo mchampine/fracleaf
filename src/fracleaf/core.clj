@@ -80,22 +80,19 @@
 
 
 ;; ### Use Clerk for notebook visualization
-(let [port 7777]
-  (webserver/start! {:port port})
-  (browse/browse-url (str "http://localhost:" port)))
+
+;; start Clerk's webserver on port 7777, opening the browser when done
+(clerk/serve! {:browse? true})
 
 ;; #### Evaluate this form to show the file.
-(comment
-  (clerk/show! "src/fracleaf/core.clj"))
+(clerk/show! "src/fracleaf/core.clj")
 
+;; Optionally start a file-watcher to automatically refresh notebooks when saved
 (comment
-  ;; Optionally start a file-watcher to automatically refresh notebooks when saved
-  (def filewatcher
-    (beholder/watch #(clerk/file-event %) "notebooks" "src")))
+  (clerk/serve! {:watch-paths ["notebooks" "src"]}))
 
 ;; Note: to show _only_ the visualization instead of this whole file:
-;;
-;;(clerk/show! "notebooks/fractalleaf.clj")
+;; (clerk/show! "notebooks/fractalleaf.clj")
 
 ;; ### Draw a Fractal Leaf with 20k points (vega-lite via Clerk)
 (v/vl
