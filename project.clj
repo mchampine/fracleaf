@@ -8,7 +8,7 @@
                  ;;Optional. If bytedeco is not present, a system-wide MKL is used.
                  [org.bytedeco/mkl-platform-redist "2021.3-1.5.6"]
                  [techascent/tech.viz "6.00-beta-16-2"]    ;; vega-lite viz
-                 [io.github.nextjournal/clerk "0.1.164"]]  ;; notebooks
+                 [io.github.nextjournal/clerk "0.2.209"]]  ;; notebooks
   ;; Nvidia doesn't ship CUDA for macOS; you have to add this to your project
   :exclusions [[org.jcuda/jcuda-natives :classifier "apple-x86_64"]
                [org.jcuda/jcublas-natives :classifier "apple-x86_64"]]
